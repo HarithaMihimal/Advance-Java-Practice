@@ -1,25 +1,42 @@
 class Hello{
     public static void main(String[] args) {
      
-    System.out.println("type conversion");
-     byte a = 127;
-     int b = 256;
-     System.out.println("value of a is "+a);
-    //  a=b; // this is not work because byte can store only 127 value but we are trying to store 256 value in it so it will give error
-     System.out.println("value of b is "+b);
-     // this is not work because byte can store only 127 value but we are trying to store 256 value in it so it will give error
+    
+        System.out.println("Arithmetic Operators ");
+        int num1 = 10;
+        int num2 = 5;
+        System.out.println("Addition: " + (num1 + num2));
+        System.out.println("Subtraction: " + (num1 - num2));    
+        System.out.println("Multiplication: " + (num1 * num2));
+        System.out.println("Division: " + (num1 / num2));
+        System.out.println("Modulus: " + (num1 % num2));
+        System.out.println("\nRelational Operators ");
+        System.out.println("Equal to: " + (num1 == num2));
+        System.out.println("Not equal to: " + (num1 != num2));
+        System.out.println("Greater than: " + (num1 > num2));
+        System.out.println("Less than: " + (num1 < num2));
+        System.out.println("Greater than or equal to: " + (num1 >= num2));
+        System.out.println("Less than or equal to: " + (num1 <= num2
+        ));
+        System.out.println("\nLogical Operators ");
+        boolean a = true;
+        boolean b = false;
+        System.out.println("Logical AND: " + (a && b));
+        System.out.println("Logical OR: " + (a || b));
+        System.out.println("Logical NOT: " + (!a));
+        System.out.println("\nAssignment Operators ");
+        int c = 10;
+        c += 5; // c = c + 5
+        System.out.println("Addition Assignment: " + c);
+        c -= 3; // c = c - 3
+        System.out.println("Subtraction Assignment: " + c);
+        c *= 2; // c = c * 2
+        System.out.println("Multiplication Assignment: " + c);
+        c /= 4; // c = c / 4
+        System.out.println("Division Assignment: " + c);
+        c %= 3; // c = c % 3
+        System.out.println("Modulus Assignment: " + c);
 
-     a= (byte) b; // this is called type casting and it will work but it will give wrong value because of overflow
-     System.out.println("value of a is "+a);
+    } 
 
-
-     byte c = 127;
-     int d = c; // this is called implicit type conversion and it will work because int can store more value than byte
-     System.out.println("value of c is "+c);
-
-     int aa = 257;
-     byte bb = (byte) aa; // this is called type casting and it will work but it will give wrong value because of overflow
-     System.out.println("value of aa is "+aa);
-     System.out.println("value of bb is "+bb); //modulo operation is performed because of overflow and it will give 1 as output because 257%256=1
-    }
 }
