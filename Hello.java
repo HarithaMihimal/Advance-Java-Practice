@@ -1,24 +1,25 @@
 class Hello{
     public static void main(String[] args) {
-        //literals
-        int num  = 1_000_000_000;
-        System.out.println(num);    
+     
+    System.out.println("type conversion");
+     byte a = 127;
+     int b = 256;
+     System.out.println("value of a is "+a);
+    //  a=b; // this is not work because byte can store only 127 value but we are trying to store 256 value in it so it will give error
+     System.out.println("value of b is "+b);
+     // this is not work because byte can store only 127 value but we are trying to store 256 value in it so it will give error
 
-        float f = 3.14f;
-        System.out.println(f);
+     a= (byte) b; // this is called type casting and it will work but it will give wrong value because of overflow
+     System.out.println("value of a is "+a);
 
-        double d  = 12;
-        System.out.println(d);
 
-        double d2 = 12e3;
-        System.out.println(d2);
+     byte c = 127;
+     int d = c; // this is called implicit type conversion and it will work because int can store more value than byte
+     System.out.println("value of c is "+c);
 
-        boolean b  = true;
-        System.out.println(b);
-        
-        char c = 'A';
-        System.out.println(c);
-        c++;
-        System.out.println(c);
+     int aa = 257;
+     byte bb = (byte) aa; // this is called type casting and it will work but it will give wrong value because of overflow
+     System.out.println("value of aa is "+aa);
+     System.out.println("value of bb is "+bb); //modulo operation is performed because of overflow and it will give 1 as output because 257%256=1
     }
 }
