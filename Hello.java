@@ -1,21 +1,24 @@
 class Hello{
     public static void main(String[] args) {
-        int num = 9;
-        byte b = (byte) num;
-        System.out.println(b);
-        byte c = 127;
-        System.out.println(c);
-        short sh = 558;
-        System.out.println(sh);
-        long l = 5674l;
-        System.out.println(l);
+        //literals
+        int num  = 1_000_000_000;
+        System.out.println(num);    
+
         float f = 3.14f;
         System.out.println(f);
-        double d = 3.14;
+
+        double d  = 12;
         System.out.println(d);
-        char cc = 'k';
-        System.out.println(cc);
-        boolean bool = true;
-        System.out.println(bool);
+
+        double d2 = 12e3;
+        System.out.println(d2);
+
+        boolean b  = true;
+        System.out.println(b);
+        
+        char c = 'A';
+        System.out.println(c);
+        c++;
+        System.out.println(c);
     }
 }
