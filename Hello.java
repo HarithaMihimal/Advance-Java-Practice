@@ -29,7 +29,11 @@ class Hello{
         } else {
             System.out.println("There is a tie");
         }
-        
+
+        //turnary operator
+        int d = 40;
+        String result = (d < 50) ? "d is greater than 50" : "d is less than or equal to 50";
+        System.out.println(result);
 
 
     } 
