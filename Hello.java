@@ -1,39 +1,32 @@
 class Hello{
     public static void main(String[] args) {
-     //if else statement
-        int a = 10;
-        if(a > 5){
-            System.out.println("a is greater than 5");
-        } else {
-            System.out.println("a is less than or equal to 5");
-        }
-
-
-        // 3 variables if else elseif
-        int b = 20;
-        if(a > b){
-            System.out.println("a is greater than b");
-        } else if(a < b){
-            System.out.println("a is less than b");
-        } else {
-            System.out.println("a is equal to b");
-        }
-        // with && || operator
-        int c = 30;
-        if(a > b && a > c){
-            System.out.println("a is the greatest");
-        } else if(b > a && b > c){
-            System.out.println("b is the greatest");
-        } else if(c > a && c > b){
-            System.out.println("c is the greatest");
-        } else {
-            System.out.println("There is a tie");
-        }
-
-        //turnary operator
-        int d = 40;
-        String result = (d < 50) ? "d is greater than 50" : "d is less than or equal to 50";
-        System.out.println(result);
+       // switch case
+         int day = 3;
+            switch (day) {
+                case 1:
+                    System.out.println("Monday");
+                    break;  
+                case 2:
+                    System.out.println("Tuesday");
+                    break;
+                case 3:
+                    System.out.println("Wednesday");
+                    break;
+                case 4:
+                    System.out.println("Thursday");
+                    break;
+                case 5:
+                    System.out.println("Friday");
+                    break;
+                case 6:
+                    System.out.println("Saturday");
+                    break;
+                case 7:
+                    System.out.println("Sunday");
+                    break;
+                default:
+                    System.out.println("Invalid day");
+            }
 
 
     } 
